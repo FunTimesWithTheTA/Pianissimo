@@ -2359,6 +2359,59 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="CalvEngIO-Switches">
+<packages>
+<package name="SPST.KT11P4SM34LFS">
+<smd name="1" x="-4.1275" y="2.02" dx="2.665" dy="1.59" layer="1"/>
+<smd name="3" x="-4.1275" y="-2.02" dx="2.665" dy="1.59" layer="1"/>
+<wire x1="-5.46" y1="3.15" x2="5.46" y2="3.15" width="0.127" layer="21"/>
+<wire x1="5.46" y1="3.15" x2="5.46" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="5.46" y1="-3.15" x2="-5.46" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="-5.46" y1="-3.15" x2="-5.46" y2="3.15" width="0.127" layer="21"/>
+<smd name="2" x="4.1275" y="2.02" dx="2.665" dy="1.59" layer="1"/>
+<smd name="4" x="4.1275" y="-2.02" dx="2.665" dy="1.59" layer="1"/>
+<text x="-5.08" y="3.81" size="0.762" layer="25">&gt;Name</text>
+<text x="-5.08" y="-4.445" size="0.762" layer="27">&gt;Value</text>
+<circle x="0" y="0" radius="1.905" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="3.15" x2="3.2" y2="3.15" width="0.127" layer="21"/>
+<wire x1="3.2" y1="3.15" x2="3.2" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="3.2" y1="-3.15" x2="-3.2" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="-3.15" x2="-3.2" y2="3.15" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SPST">
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<pin name="A" x="-5.08" y="0" visible="pin" length="point"/>
+<pin name="B" x="5.08" y="0" visible="pin" length="point" rot="R180"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="95">&gt;Name</text>
+<text x="-2.54" y="-5.08" size="1.27" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SPST.KT11P4SM34LFS" prefix="SW" uservalue="yes">
+<description>https://www.ckswitches.com/media/1468/kt.pdf</description>
+<gates>
+<gate name="G$1" symbol="SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPST.KT11P4SM34LFS">
+<connects>
+<connect gate="G$1" pin="A" pad="1 2"/>
+<connect gate="G$1" pin="B" pad="3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2467,6 +2520,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R13" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
 <part name="U$10" library="CalvEngIO-Symbols" deviceset="V+" device=""/>
 <part name="GND7" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
+<part name="SW1" library="CalvEngIO-Switches" deviceset="SPST.KT11P4SM34LFS" device=""/>
+<part name="SW2" library="CalvEngIO-Switches" deviceset="SPST.KT11P4SM34LFS" device=""/>
+<part name="SW3" library="CalvEngIO-Switches" deviceset="SPST.KT11P4SM34LFS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2850,6 +2906,18 @@ Active BandPass Filter</text>
 <instance part="GND7" gate="1" x="312.42" y="20.32" smashed="yes">
 <attribute name="VALUE" x="312.42" y="20.066" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="SW1" gate="G$1" x="238.76" y="127" smashed="yes">
+<attribute name="NAME" x="236.22" y="124.46" size="1.27" layer="95"/>
+<attribute name="VALUE" x="236.22" y="121.92" size="1.27" layer="96"/>
+</instance>
+<instance part="SW2" gate="G$1" x="238.76" y="63.5" smashed="yes">
+<attribute name="NAME" x="236.22" y="60.96" size="1.27" layer="95"/>
+<attribute name="VALUE" x="236.22" y="58.42" size="1.27" layer="96"/>
+</instance>
+<instance part="SW3" gate="G$1" x="238.76" y="2.54" smashed="yes">
+<attribute name="NAME" x="236.22" y="0" size="1.27" layer="95"/>
+<attribute name="VALUE" x="236.22" y="-2.54" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3123,19 +3191,14 @@ Active BandPass Filter</text>
 </net>
 <net name="NOTE_2" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="-IN"/>
-<wire x1="213.36" y1="60.96" x2="210.82" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="60.96" x2="210.82" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="50.8" x2="233.68" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="50.8" x2="233.68" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="OUT"/>
-<wire x1="233.68" y1="63.5" x2="228.6" y2="63.5" width="0.1524" layer="91"/>
-<label x="233.68" y="63.5" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="66.04" x2="279.4" y2="66.04" width="0.1524" layer="91"/>
 <label x="279.4" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SW2" gate="G$1" pin="B"/>
+<wire x1="243.84" y1="63.5" x2="246.38" y2="63.5" width="0.1524" layer="91"/>
+<label x="246.38" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -3224,19 +3287,14 @@ Active BandPass Filter</text>
 </net>
 <net name="NOTE_3" class="0">
 <segment>
-<pinref part="U$19" gate="G$1" pin="-IN"/>
-<wire x1="213.36" y1="0" x2="210.82" y2="0" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="0" x2="210.82" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="-10.16" x2="233.68" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="-10.16" x2="233.68" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="U$19" gate="G$1" pin="OUT"/>
-<wire x1="233.68" y1="2.54" x2="228.6" y2="2.54" width="0.1524" layer="91"/>
-<label x="233.68" y="2.54" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R47" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="53.34" x2="279.4" y2="53.34" width="0.1524" layer="91"/>
 <label x="279.4" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SW3" gate="G$1" pin="B"/>
+<wire x1="243.84" y1="2.54" x2="246.38" y2="2.54" width="0.1524" layer="91"/>
+<label x="246.38" y="2.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -3325,19 +3383,14 @@ Active BandPass Filter</text>
 </net>
 <net name="NOTE_1" class="0">
 <segment>
-<pinref part="U$27" gate="G$1" pin="-IN"/>
-<wire x1="213.36" y1="124.46" x2="210.82" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="124.46" x2="210.82" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="114.3" x2="233.68" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="114.3" x2="233.68" y2="127" width="0.1524" layer="91"/>
-<pinref part="U$27" gate="G$1" pin="OUT"/>
-<wire x1="233.68" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
-<label x="233.68" y="127" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="78.74" x2="279.4" y2="78.74" width="0.1524" layer="91"/>
 <label x="279.4" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="B"/>
+<wire x1="243.84" y1="127" x2="246.38" y2="127" width="0.1524" layer="91"/>
+<label x="246.38" y="127" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$50" class="0">
@@ -3447,6 +3500,48 @@ Active BandPass Filter</text>
 <wire x1="312.42" y1="38.1" x2="312.42" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="38.1" x2="312.42" y2="38.1" width="0.1524" layer="91"/>
 <junction x="312.42" y="38.1"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$27" gate="G$1" pin="OUT"/>
+<pinref part="SW1" gate="G$1" pin="A"/>
+<wire x1="233.68" y1="127" x2="231.14" y2="127" width="0.1524" layer="91"/>
+<pinref part="U$27" gate="G$1" pin="-IN"/>
+<wire x1="231.14" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="124.46" x2="210.82" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="124.46" x2="210.82" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="116.84" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="116.84" x2="231.14" y2="127" width="0.1524" layer="91"/>
+<junction x="231.14" y="127"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$19" gate="G$1" pin="OUT"/>
+<pinref part="SW3" gate="G$1" pin="A"/>
+<wire x1="233.68" y1="2.54" x2="231.14" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="U$19" gate="G$1" pin="-IN"/>
+<wire x1="231.14" y1="2.54" x2="228.6" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="0" x2="210.82" y2="0" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="0" x2="210.82" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="-7.62" x2="231.14" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-7.62" x2="231.14" y2="2.54" width="0.1524" layer="91"/>
+<junction x="231.14" y="2.54"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="-IN"/>
+<wire x1="213.36" y1="60.96" x2="210.82" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="60.96" x2="210.82" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="53.34" x2="231.14" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="53.34" x2="231.14" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="OUT"/>
+<pinref part="SW2" gate="G$1" pin="A"/>
+<wire x1="233.68" y1="63.5" x2="231.14" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="63.5" x2="228.6" y2="63.5" width="0.1524" layer="91"/>
+<junction x="231.14" y="63.5"/>
 </segment>
 </net>
 </nets>
