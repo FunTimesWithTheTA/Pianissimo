@@ -2535,6 +2535,9 @@ Active BandPass Filter</text>
 <text x="139.7" y="106.68" size="1.778" layer="91">Exact resistor value is 556383Ohms</text>
 <text x="142.24" y="73.66" size="1.778" layer="91">Exact resistor value is 624819Ohms</text>
 <text x="327.66" y="76.2" size="1.778" layer="91">Capacitor is optional</text>
+<text x="116.84" y="106.68" size="3.81" layer="91">Note: C5</text>
+<text x="116.84" y="43.18" size="3.81" layer="91">Note: D5</text>
+<text x="116.84" y="-20.32" size="3.81" layer="91">Note: E5</text>
 </plain>
 <instances>
 <instance part="U$3" gate="G$1" x="119.38" y="66.04" smashed="yes" rot="MR180">
