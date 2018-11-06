@@ -2425,23 +2425,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$3" library="CalvEngIO-AnalogIC" deviceset="741.OP" device=""/>
 <part name="R5" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="10k"/>
 <part name="R6" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="10k"/>
-<part name="R7" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="19k"/>
+<part name="R7" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="625k"/>
 <part name="C4" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND1" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="GND2" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="U$1" library="CalvEngIO-Symbols" deviceset="V+" device=""/>
 <part name="U$2" library="CalvEngIO-Symbols" deviceset="V-" device=""/>
-<part name="R1" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C2" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R1" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="625k"/>
+<part name="C2" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND3" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
-<part name="R2" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C3" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R2" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="625k"/>
+<part name="C3" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND4" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
-<part name="R3" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C5" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R3" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="625k"/>
+<part name="C5" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND5" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
-<part name="R4" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C6" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R4" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="625k"/>
+<part name="C6" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND6" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="U$4" library="CalvEngIO-AnalogIC" deviceset="741.OP" device=""/>
 <part name="U$5" library="CalvEngIO-AnalogIC" deviceset="741.OP" device=""/>
@@ -2454,52 +2454,52 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$16" library="CalvEngIO-AnalogIC" deviceset="741.OP" device=""/>
 <part name="R19" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="10k"/>
 <part name="R20" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="10k"/>
-<part name="R21" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="19k"/>
+<part name="R21" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="701k"/>
 <part name="C10" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND12" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="GND13" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="U$17" library="CalvEngIO-Symbols" deviceset="V+" device=""/>
 <part name="U$18" library="CalvEngIO-Symbols" deviceset="V-" device=""/>
-<part name="R22" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C12" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R22" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="701k"/>
+<part name="C12" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND14" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
-<part name="R23" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C13" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R23" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="701k"/>
+<part name="C13" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND15" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
-<part name="R24" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C14" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R24" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="701k"/>
+<part name="C14" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND16" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
-<part name="R25" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C15" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R25" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="701k"/>
+<part name="C15" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND17" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="U$19" library="CalvEngIO-AnalogIC" deviceset="741.OP" device=""/>
 <part name="U$24" library="CalvEngIO-AnalogIC" deviceset="741.OP" device=""/>
 <part name="R34" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="10k"/>
 <part name="R35" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="10k"/>
-<part name="R36" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="19k"/>
+<part name="R36" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="556k"/>
 <part name="C18" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND21" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="GND22" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="U$25" library="CalvEngIO-Symbols" deviceset="V+" device=""/>
 <part name="U$26" library="CalvEngIO-Symbols" deviceset="V-" device=""/>
-<part name="R37" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C20" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R37" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="556k"/>
+<part name="C20" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND23" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
-<part name="R38" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C21" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R38" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="556k"/>
+<part name="C21" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND24" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
-<part name="R39" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C22" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R39" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="556k"/>
+<part name="C22" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND25" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
-<part name="R40" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C23" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R40" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="556k"/>
+<part name="C23" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND26" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="U$27" library="CalvEngIO-AnalogIC" deviceset="741.OP" device=""/>
 <part name="U$29" library="CalvEngIO-AnalogIC" deviceset="741.OP" device=""/>
-<part name="R47" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C24" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
-<part name="R48" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C25" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R47" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="39k"/>
+<part name="C24" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="33n"/>
+<part name="R48" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="270k"/>
+<part name="C25" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100p"/>
 <part name="U1" library="SparkFun-IC-Amplifiers" deviceset="LM386" device="" value="LM386N"/>
 <part name="R49" library="CalvEngIO-Passives" deviceset="R-TRIMM" device="5W"/>
 <part name="GND30" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
@@ -2512,10 +2512,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SPK1" library="CalvEngIO-Electromechanical" deviceset="SPEAKER" device=""/>
 <part name="GND34" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="U$32" library="CalvEngIO-Symbols" deviceset="V+" device=""/>
-<part name="R8" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C1" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
-<part name="R11" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
-<part name="C11" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="R8" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="39k"/>
+<part name="C1" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="33n"/>
+<part name="R11" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER" value="39k"/>
+<part name="C11" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="33n"/>
 <part name="R12" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
 <part name="R13" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402-SMALLER"/>
 <part name="U$10" library="CalvEngIO-Symbols" deviceset="V+" device=""/>
@@ -2532,6 +2532,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 using a 4-Pole Low-Pass Filter</text>
 <text x="289.56" y="88.9" size="2.54" layer="91">Summing Amplifier and
 Active BandPass Filter</text>
+<text x="139.7" y="106.68" size="1.778" layer="91">Exact resistor value is 556383Ohms</text>
+<text x="142.24" y="73.66" size="1.778" layer="91">Exact resistor value is 624819Ohms</text>
+<text x="327.66" y="76.2" size="1.778" layer="91">Capacitor is optional</text>
 </plain>
 <instances>
 <instance part="U$3" gate="G$1" x="119.38" y="66.04" smashed="yes" rot="MR180">
