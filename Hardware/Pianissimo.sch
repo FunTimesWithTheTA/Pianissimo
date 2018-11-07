@@ -6052,7 +6052,7 @@ fc = 663Hz</text>
 <segment>
 <pinref part="SW3" gate="G$1" pin="B"/>
 <wire x1="251.46" y1="2.54" x2="254" y2="2.54" width="0.1524" layer="91"/>
-<label x="254" y="2.54" size="1.27" layer="95" xref="yes"/>
+<label x="254" y="2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -6137,13 +6137,6 @@ fc = 663Hz</text>
 <wire x1="220.98" y1="129.54" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
 <junction x="208.28" y="129.54"/>
 <pinref part="OP4" gate="A" pin="+IN"/>
-</segment>
-</net>
-<net name="CF" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="-50.8" x2="55.88" y2="-50.8" width="0.1524" layer="91"/>
-<label x="55.88" y="-50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$50" class="0">
@@ -6420,17 +6413,24 @@ fc = 663Hz</text>
 <segment>
 <pinref part="SW1" gate="G$1" pin="B"/>
 <wire x1="251.46" y1="127" x2="254" y2="127" width="0.1524" layer="91"/>
-<label x="254" y="127" size="1.27" layer="95" xref="yes"/>
+<label x="254" y="127" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="-50.8" x2="55.88" y2="-50.8" width="0.1524" layer="91"/>
+<label x="55.88" y="-50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="D5" class="0">
+<segment>
+<pinref part="SW2" gate="G$1" pin="B"/>
+<wire x1="251.46" y1="63.5" x2="254" y2="63.5" width="0.1524" layer="91"/>
+<label x="254" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="-63.5" x2="55.88" y2="-63.5" width="0.1524" layer="91"/>
 <label x="55.88" y="-63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="SW2" gate="G$1" pin="B"/>
-<wire x1="251.46" y1="63.5" x2="254" y2="63.5" width="0.1524" layer="91"/>
-<label x="254" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
